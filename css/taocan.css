@@ -1,0 +1,1502 @@
+@charset "utf-8";
+
+/*默认样式*/
+
+/*单行文本溢出省略*/
+.odd-ellipsis{
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+/*多行文本溢出省略*/
+.even-ellipsis{
+    display:-webkit-box !important;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    word-break:break-all;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+}
+.clearfix:before,.clearfix:after{
+    content:"";
+    height:0;
+    line-height:0;
+    display:block;
+    visibility:hidden;
+    clear:both;
+}
+/*隐藏*/
+.none{
+    display: none;
+}
+.right{
+    float: right;
+}
+/*预定页开始*/
+.order-content-box{
+    width:1200px;
+    margin:20px auto;
+}
+/*白色模块*/
+.item-box{
+    background:#fff;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 9px 2px rgba(191,187,191,0.35);
+    -moz-box-shadow: 0px 0px 9px 2px rgba(191,187,191,0.35);
+    box-shadow: 0px 0px 9px 2px rgba(191,187,191,0.35);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+/*预定内容标题*/
+.order-content-title{
+    font-size:18px;
+    padding: 0 5px;
+    padding-bottom:10px;
+    border-bottom:1px solid #ccc;
+}
+.order-content-title a{
+    color:#0c9ce4;
+    font-size: 14px;
+    float:right;
+}
+/*预定内容左*/
+.order-content-l{
+    width:920px;
+    float: left;
+}
+/*产品标题信息内容*/
+.order-titleInfo{
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0;
+    font-size: 14px;
+}
+.order-titleInfo h1{
+    font-size: 18px;
+    font-weight: bold;
+}
+.order-titleInfo p{
+    margin: 10px 0;
+    display: inline-block;
+}
+.order-titleInfo p span{
+    margin-right: 15px;
+}
+.order-titleInfo .titleInfo-price{
+    position: absolute;
+    right: 0;
+    top:25px;
+}
+.titleInfo-price span{
+    color:#f78837;
+    font-size: 22px;
+}
+/*酒店名称*/
+.tab-item{
+    border:1px solid #ccc;
+    margin-bottom:15px;
+}
+.tab-item table{
+    width: 100%;
+    font-size: 14px;
+}
+.tab-item table tr{
+    height:40px;
+}
+.tab-item table thead{
+    background:#f2f2f2;
+}
+.tab-item table tbody{
+    background:#f8f8f8;
+}
+.bor-item{
+    border:1px solid #ccc;
+    height: 27px;
+    padding: 0 10px;
+    outline: none;
+    font-size: 14px;
+}
+/*显示隐藏按钮*/
+.show-btn,.hide-btn{
+    color:#0c9ce4;
+    cursor:pointer;
+}
+.show-btn:hover,.hide-btn:hover{
+    color:#008dd4;
+}
+/*酒店隐藏内容*/
+.hotel-info,.ticket-info{
+    padding: 15px 10px;
+    font-size: 14px;
+    border-top:1px solid #ccc;
+    position: relative;
+    background:#fffbf8;
+}
+.hotel-info img{
+    width: 130px;
+    height: 90px;
+    margin:10px 0;
+}
+.hotel-info .hotel-mx span{
+    width: 20%;
+    display: inline-block;
+    line-height: 24px;
+}
+.hide-btn{
+    position: absolute;
+    bottom:15px;
+    right: 20px;
+}
+/*门票内容*/
+.ticket-info p{
+    display: inline-block;
+    padding-left:70px;
+    position:relative;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 32px;
+}
+.ticket-info p label{
+    font-weight:bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*联系人信息*/
+.order-content-title span{
+    color: #999;
+    font-size: 12px;
+}
+.contacts-content{
+    padding-left: 130px;
+    font-size: 14px;
+    padding-top: 30px;
+}
+.contacts-content p{
+    margin-bottom:15px;
+}
+.contacts-content label{
+    width: 70px;
+    text-align: right;
+    margin-right: 15px;
+    display: inline-block;
+}
+.contacts-content label span{
+    color: red;
+    font-size: 16px;
+    position: relative;
+    top: 3px;
+}
+.contacts-content input{
+    width: 250px;
+    padding-left: 20px;
+}
+/*出行人信息*/
+.contacts{
+    position: relative;
+}
+.go-content{
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.go-content:last-child{
+    padding-bottom:0;
+    border-bottom:0;
+}
+.go-content .go-id{
+    position: absolute;
+    left: 20px;
+    top:80px;
+    font-size: 16px;
+}
+.addContacts{
+    position: absolute;
+    right: 120px;
+    top:120px;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    line-height: 40px;
+    background:#409ddd;
+    z-index: 9;
+}
+.addContacts:hover{
+    background:#1d73af;
+}
+.delContacts{
+    width: 78px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ccc;
+    background: #eee;
+    position: absolute;
+    right: 120px;
+    top: 68px;
+    z-index: 6;
+    font-size: 14px;
+    text-align: center;
+}
+.delContacts:hover{
+    background: #ccc;
+}
+.red{
+    color: red;
+}
+/*发票信息*/
+.fapiao-content-top{
+    margin:20px 0 0px;
+    font-size: 14px;
+}
+.fapiao-content-top input{
+    margin-right:3px;
+    vertical-align: middle;
+}
+.fapiao-content-top label{
+    margin-right:50px;
+}
+.fapiao-mx{
+    padding-top:20px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.fapiao-mx p{
+    display: inline-block;
+    margin:5px 0 5px;
+    width: 100%;
+    position: relative;
+}
+.fapiao-mx p label{
+    margin-right:5px;
+    width: 70px;
+    text-align: right;
+    display: inline-block;
+}
+.fapiao-mx p input{
+    width: 270px;
+}
+.fapiao-mx p textarea{
+    width: 300px;
+    height: 100px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+.fapiao-mx .price{
+    font-size: 16px;
+    color:#ffa81f;
+}
+/*套餐总价*/
+.order-btm{
+    width: 100%;
+    height:60px;
+    line-height: 60px;
+    border:2px solid #ffb027;
+    background:#fff7ea;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding-right:225px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.order-btm .back-btn{
+    color:#409ddd;
+    font-size: 14px;
+}
+.order-btm-price{
+    float: right;
+    font-size: 16px;
+}
+.order-btm-price span{
+    color:#f7931e;
+    font-size: 28px;
+}
+.order-btm button{
+    position: absolute;
+    right: -2px;
+    top:-2px;
+    background:#ffb027;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 60px;
+    border: 0;
+    width: 210px;
+    cursor: pointer;
+    height: 60px;
+}
+.order-btm button:hover{
+    background:#F7870E;
+}
+/*预定须知*/
+.ydxz{
+    color: #555;
+    overflow: auto;
+    max-height:300px;
+}
+.ydxz h1{
+    font-size: 18px;
+    line-height:32px;
+}
+.ydxz label{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.ydxz p{
+    color: #888;
+    font-size: 14px;
+}
+/*预定内容右*/
+.order-content-r{
+    width: 225px;
+    float: right;
+}
+.order-content-r .order-content-title{
+    border-bottom:0;
+}
+.zy-content-list{
+    border-top:1px dotted #ccc;
+    font-size: 14px;
+    padding: 10px;
+}
+.zy-content-list span{
+    color: #333;
+}
+.zy-content-list p{
+    color: #666;
+}
+.zy-content-list .price{
+    color:#f78837;
+    font-size: 16px;
+}
+/*景+酒预定页结束*/
+
+/*景+酒产品列表页开始*/
+.divBox{
+    padding: 20px 20px 70px;
+}
+/*导航*/
+.nav-box{
+    margin-bottom:20px;
+    color: #4d4d4d;;
+}
+/*搜索栏*/
+.search-box{
+    padding:10px;
+    border-bottom: 1px solid #ebebeb;
+}
+/*输入框边框盒子*/
+.inp-box{
+    border: 1px solid #ccc;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 5px;
+    display: inline-block;
+    width: 185px;
+    font-size: 14px;
+    color: #666;
+    position: relative;
+    margin-right:20px;
+    background: #fff;
+}
+.inp-box .city{
+    width:110px;
+    border: 0;
+    outline: none;
+    font-size: 14px;
+    margin-left:8px;
+}
+.inp-box i{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 18px;
+    color: #666;
+}
+.inp-box #ruzhu{
+    border: 0;
+    outline: none;
+    margin-left:8px;
+    width: 138px;
+    font-size: 14px;
+}
+.inp-box .info-inp{
+    width: 240px;
+    font-size: 14px;
+    border:0;
+    outline:0;
+}
+/*默认按钮样式*/
+.yellow-color{
+    width: 92px;
+    height: 34px;
+    background:#f7931e;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 16px;
+    margin: 0 5px;
+    border:0;
+    cursor: pointer;
+}
+.blue-color{
+    width: 92px;
+    height: 34px;
+    background:#34a6df;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 16px;
+    margin: 0 5px;
+    border:0;
+    cursor: pointer;
+}
+.yellow-color:hover{
+    background: #f77b08;
+}
+.blue-color:hover{
+    background: #1291df;
+}
+/*菜单类型*/
+.menu-content{
+    position: relative;
+    font-size: 13px;
+    color: #333;
+}
+.menu-content-list{
+    border-bottom: 1px solid #e2e2e2;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding-left: 96px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-top:8px;
+    height:40px;
+}
+.menu-content-list:last-child{
+    border-bottom: transparent;
+}
+.p-r{
+    padding-right:70px;
+}
+.menu-content-list label{
+    position: absolute;
+    top: 10px;
+    left:0;
+    width:70px;
+    text-align: right;
+    display: inline-block;
+    font-weight: bold;
+}
+.sel-box{
+    border-bottom: 1px dotted #ccc;
+    padding-bottom:8px;
+}
+.sel-box .sel-list{
+    float: left;
+    margin-right: 15px;
+}
+.sel-box .sel-list-l{
+    float: left;
+    background:#2d92d8;
+    color: #fff;
+    padding: 1px 5px;
+}
+.sel-box .sel-list-r{
+    float: left;
+    background:#ebf7ff;
+    color:#2d92d8;
+    padding: 1px 5px;
+    cursor: pointer;
+}
+.sel-box .sel-list-r:hover{
+    background:#2d92d8;
+    color: #fff;
+}
+.sel-box .sel-list-r:hover .del-sel{
+    color:#fff;
+}
+.sel-box .sel-list-r .del-sel{
+    color:#2d92d8;
+    float: right;
+    margin-left: 10px;
+}
+.sel-box .sel-list-r .del-sel i{
+    font-size: 12px;
+}
+/*清除全部*/
+.del-all{
+    color:#2d92d8;
+    font-size: 14px;
+    float: right;
+    margin-top: 2px;
+}
+.del-all:hover{
+    color: #1063d8;
+}
+/*更多*/
+.more-btn{
+    position: absolute;
+    top:8px;
+    right:0;
+    width:60px;
+    background:#57b3e1;
+    color: #fff;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+}
+.more-btn i{
+    font-size: 12px;
+    margin-left:3px;
+    display: inline-block;
+}
+.more-btn:hover{
+    background:#2d92d8;
+}
+/*菜单类型*/
+.menu-content-list ul{
+    overflow: hidden;
+}
+.menu-content-list ul li{
+    float: left;
+    line-height: 23px;
+    padding: 0px 10px;
+    cursor: pointer;
+    margin-bottom:8px;
+}
+.menu-content-list ul li:hover{
+    background:#2d92d8;
+    color: #fff;
+}
+.b-bg{
+    background:#2d92d8;
+    color: #fff;
+}
+/*确定按钮*/
+.price-btn{
+    padding: 2px 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-left: 5px;
+    color: #999;
+    cursor: pointer;
+}
+.price-btn:hover{
+    border:1px solid #2d92d8;
+    color:#2d92d8;
+}
+/*列表内容*/
+.list-content{
+    position: relative;
+    width: 100%;
+    padding-right: 335px;
+    -webkit-box-sizing:border-box;
+    box-sizing: border-box;
+}
+.list-content-l{
+    width: 100%;
+}
+.list-content-r{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 320px;
+}
+/*筛选条件*/
+.sel-nav{
+    padding: 10px 0;
+    font-size: 14px;
+}
+.sel-nav i{
+    font-size: 12px;
+}
+.sel-nav ul li{
+    float: left;
+    border-right:1px dotted #aaa;
+    padding:0 20px;
+    font-size: 14px;
+    line-height: 28px;
+    cursor: pointer;
+}
+.sel-nav ul li:hover{
+    color:#2d92d8;
+}
+.blue{
+    color:#2d92d8 !important;
+}
+/*列表内容*/
+.jj-list{
+    position: relative;
+    width: 100%;
+    border-bottom: 1px dotted #ccc;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 210px;
+    padding-right:140px;
+    height: 170px;
+}
+.jj-list:hover {
+    background: rgb(245, 250, 255);
+    cursor: pointer;
+}
+.jj-list:last-child{
+    border-bottom: 0;
+}
+/*列表左*/
+.jj-list-img{
+    position: absolute;
+    top:15px;
+    left: 15px;
+}
+.jj-list-img img{
+    width:188px;
+    height: 105px;
+    margin-bottom: 10px;
+}
+.jj-list-img p span{
+    border: 1px solid;
+    margin-right: 5px;
+    display: inline-block;
+    padding: 0px 3px;
+}
+.g-color{
+    color:#2e9900;
+}
+.green-color{
+    color:#72c100;
+}
+.o-color{
+    color:#ff690f;
+}
+/*列表中*/
+.jj-list-info{
+    padding-top: 5px;
+    width:100%;
+}
+.jj-list-info h1{
+    font-size: 18px;
+    color:#0065bb;
+    line-height: 40px;
+}
+.jj-list-info h1:hover{
+    text-decoration: underline;
+}
+.jj-list-info .jj-list-info-item{
+    font-size: 12px;
+    margin:0 0 5px;
+}
+.jj-list-info i{
+    color:#2d92d8;
+    vertical-align: middle;
+}
+.jj-list-info label{
+    color:#2d92d8;
+    margin-right: 5px;
+    display: inline-block;
+}
+.ll{
+    border: 1px solid #ccc;
+    padding: 2px 5px;
+    color: #333;
+    background:#f2f2f2;
+}
+.rr{
+    border: 1px solid #ccc;
+    padding: 2px 5px;
+    color: #333;
+    margin-left: -4px;
+}
+/*列表右*/
+.jj-list-price{
+    position: absolute;
+    right: 5px;
+    top:50px;
+    width: 130px;
+}
+.jj-list-price p{
+    color:#ff6b11;
+    font-size: 16px;
+}
+.jj-list-price p span{
+    font-size: 26px;
+}
+.jj-list-price a{
+    display: inline-block;
+    width: 120px;
+    height: 34px;
+    line-height: 34px;
+    background:#2d92d8;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.jj-list-price a:hover{
+    background: #1177d8;
+}
+.jj-list-price a i{
+    display: inline-block;
+    font-size: 12px;
+    transform:rotate(-90deg);
+    margin-left: 5px;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+/*我浏览过的产品*/
+.liulan-title{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom:8px;
+    margin-bottom: 10px;
+}
+.liulan-title h1{
+    font-size: 16px;
+    color: #333;
+    border-left:5px solid #2d92d8;
+    line-height: 18px;
+    padding-left: 5px;
+}
+/*浏览内容*/
+.liulan-content{
+    padding: 10px 0;
+    position: relative;
+    border-bottom:1px solid #eee;
+    height: 90px;
+}
+.liulan-content:last-child{
+    border-bottom: none;
+}
+.liulan-content img{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 98px;
+    height: 88px;
+}
+.liulan-content-info{
+    width: 100%;
+    padding-left:105px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.liulan-content-info h1{
+    font-size: 16px;
+}
+.liulan-content-price{
+    position: absolute;
+    left:105px;
+    bottom:10px;
+    font-size: 14px;
+}
+/*景+酒列表页结束*/
+
+/*景+酒产品详情页开始*/
+.jj-detail-wrap{
+    width: 1200px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 20px auto;
+    color: #333;
+}
+/*标题*/
+.detail-title{
+    margin-bottom: 10px;
+}
+.detail-title h1{
+    font-size: 24px;
+}
+.detail-title p{
+    font-size: 14px;
+    color:#ff8800;
+}
+/*详情上部左侧*/
+.detail-top-l{
+    width:590px;
+    /*height: 730px;*/
+    /*border:1px solid;*/
+    float: left;
+}
+/*轮播图*/
+.ban{
+    width:590px;
+    height:435px;
+    position:relative;
+    overflow:hidden;
+    margin:0 auto;
+}
+.ban2{
+    width:590px;
+    height:345px;
+    position:relative;
+    overflow:hidden;
+}
+.ban2 ul{
+    position:absolute;
+    left:0; top:0;
+}
+.ban2 ul li{
+    width:590px;
+    height:345px;
+}
+.num{
+    height:80px;
+    overflow:hidden;
+    width:590px;
+    position:relative;
+    float:left;
+}
+.min_pic{
+    padding-top:5px;
+    width:500px;
+}
+.num ul{
+    position:absolute;
+    left:0;
+    top:0;
+}
+.num ul li{
+    width:114.8px;
+    height:80px;
+    margin-right:4px;
+    padding:1px;
+    box-sizing:border-box;
+}
+.num ul li.on{
+    border:2px solid #ff9216;
+    padding:0;
+}
+.ban2 ul li img{
+    width: 590px;
+    height:345px;
+}
+.num ul li img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.num ul li.on img{
+    opacity:1;
+}
+.ban2:hover .prev1,.ban2:hover .next1{
+    display: block;
+}
+.prev1 {
+    position: absolute;
+    top: 150px;
+    left:10px;
+    width: 30px;
+    height: 42px;
+    z-index: 9;
+    cursor: pointer;
+    background: rgba(255,255,255,0.6);
+    line-height: 42px;
+}
+.next1 {
+    position: absolute;
+    top: 150px;
+    right:10px;
+    width: 30px;
+    height: 42px;
+    z-index: 9;
+    cursor: pointer;
+    background: rgba(255,255,255,0.6);
+    line-height: 42px;
+}
+.prev1 i,.next1 i{
+    font-size:30px;
+    color: #777;
+}
+/*日历*/
+.date-box{
+    border: 1px solid red;
+    width: 100%;
+    height:280px;
+    margin-top: 10px;
+}
+/*详情上部右侧*/
+.detail-top-r{
+    width:545px;
+    /*height: 730px;*/
+    float: right;
+}
+/*价格*/
+.detail-price-box{
+    width: 100%;
+    height: 110px;
+    border: 3px solid #ff8800;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fffaf5;
+    font-size: 14px;
+}
+.detail-price-box p{
+    margin: 25px 0 0 30px;
+}
+.price_dollar{
+    color:#ff8800;
+    font-size: 16px;
+}
+.sale_price{
+    color:#ff8800;
+    font-size: 32px;
+}
+.detail-price-box p .price_tips{
+    color:#ff8800;
+    margin-left: 30px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+/*信息*/
+.detail-info{
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px 0 0 20px;
+    font-size: 13px;
+}
+.detail-info p label{
+    width:65px;
+    display: inline-block;
+}
+.detail-info p span{
+    margin-right: 5px;
+}
+.detail-info p{
+    margin-bottom:12px;
+}
+.day{
+    border: 1px solid #b3c7dc;
+    background: #f7f7f7;
+    color: #0a5cc0;
+    padding:4px 8px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 60px;
+    height: 27px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.active-day i{
+    position: absolute;
+    right: -2px;
+    bottom: -6px;
+    display: inline-block;
+    width: 10px;
+    height: 21px;
+    background: #ff8800;
+    transform: rotate(45deg);
+    color: #fff;
+}
+.active-day .dui{
+    display: inline-block;
+    width: 3px;
+    height: 7px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+.active-day{
+    border: 2px solid #ff8800 !important;
+    background: #fff !important;
+    color: #333 !important;
+    padding:3px 10px 0 5px;
+}
+/*产品经理推荐*/
+.product-tj{
+    padding-top:40px;
+    /*height: 390px;*/
+    overflow: hidden;
+}
+.product-tj h1{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.product-tj p{
+    line-height: 28px;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 0px;
+}
+/*景+酒预定部分*/
+.jj-detail-order{
+    border: 3px solid #ffac4c;
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+}
+/*头部*/
+.book-title-fix{
+    position: fixed !important;
+    width: 1114px;
+    margin:0 auto;
+    top: 0;
+    z-index: 99;
+    border-top: 3px solid #ffac4c;
+    border-bottom: 3px solid #ffac4c !important;
+}
+.book-title{
+    background: #fffaf5;
+    border-bottom: 1px solid #ffdeb7;
+    padding: 10px 40px;
+    height: 52px;
+    line-height: 52px;
+    position: relative;
+}
+.book-title .date{
+    display: inline-block;
+}
+.book-title .date label{
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.book-title .date .inp-box{
+    width: 250px;
+}
+.book-title .date .inp-box input{
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    width: 120px;
+}
+.book-title .date .inp-box i{
+    font-size: 14px;
+}
+.book-order{
+    display: inline-block;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 30px;
+    width: 72px;
+    font-size:18px;
+    background-color: #fb9125;
+    background-image: -webkit-linear-gradient(top, #fb9125, #fa8721);
+    background-image: -moz-linear-gradient(top, #fb9125, #fa8721);
+    background-image: -ms-linear-gradient(top, #fb9125, #fa8721);
+    background-image: -o-linear-gradient(top, #fb9125, #fa8721);
+    background-image: linear-gradient(top, #fb9125, #fa8721);
+    color: #fff;
+    border-radius: 3px;
+    text-align: center;
+    border: 1px solid #e08821;
+    -webkit-box-shadow: inset 0 1px 0 0 #fcad5c;
+    box-shadow: inset 0 1px 0 0 #fcad5c;
+    vertical-align: super;
+    margin-left: 10px;
+}
+.book-order:hover{
+    background-color: #fd7b2b;
+    background-image: -webkit-linear-gradient(top, #fd802c, #fd6f29);
+    background-image: -moz-linear-gradient(top, #fd802c, #fd6f29);
+    background-image: -ms-linear-gradient(top, #fd802c, #fd6f29);
+    background-image: -o-linear-gradient(top, #fd802c, #fd6f29);
+    background-image: linear-gradient(top, #fd802c, #fd6f29);
+    border: 1px solid #fc6621;
+    -webkit-box-shadow: inset 0 1px 0 0 #fea161;
+    box-shadow: inset 0 1px 0 0 #fea161;
+}
+/*门票预定*/
+.book-info-box{
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:10px 20px;
+}
+.book-info-item{
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px 0 5px 85px;
+    position: relative;
+    border-bottom: 1px solid #eee;
+}
+.book-info-item:last-child{
+    border-bottom: 0;
+}
+.book-info-item label{
+    position: absolute;
+    top: 15px;
+    left: 0;
+    font-size: 18px;
+}
+.book-tab-box{
+    width: 100%;
+    font-size: 14px;
+}
+.book-tab-box thead{
+    height: 30px;
+    line-height: 30px;
+    background: #f8f8f8;
+    color: #666;
+}
+.book-tab-box tbody{
+    height: 50px;
+    line-height: 50px;
+}
+.book-tab-box tfoot{
+    height: 50px;
+    line-height: 50px;
+}
+.book-tab-box .sel-hotel{
+    font-size: 14px;
+    background: #23c234;
+    color: #fff;
+    cursor: pointer;
+    line-height: 22px;
+    width:60px;
+    text-align: center;
+}
+/*酒店预定*/
+
+/*预定时间*/
+.hotel-choose-date .icon{
+    width: 35px;
+    height: 35px;
+    border: 1px solid #69c1ff;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    padding-left:5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: 10px;
+    position: relative;
+    top:-3px;
+}
+.hotel-choose-date .icon i{
+    color:#69c1ff;
+    font-size: 24px;
+}
+.hotel-choose-date .date-info{
+    width: 65px;
+    position: relative;
+    padding-left: 40px;
+    padding-top: 5px;
+}
+.hotel-choose-date em{
+    color: #999;
+}
+.hotel-choose-date>div{
+    display: inline-block;
+}
+.hotel-choose-date .date-info .big{
+    font-size: 32px;
+    color: #333;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.hotel-choose-date .date-info p{
+    color: #999;
+}
+.hotel-choose-date em{
+    position:relative;
+    top:-5px;
+}
+.hotel-choose-date .ruzhu{
+    font-size: 14px;
+    position: relative;
+    top:-10px;
+    margin-left: 10px;
+}
+/*酒店预定详情*/
+.hotel-choose-detail{
+    position: relative;
+    height: 102px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left:200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.hotel-choose-detail img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 180px;
+    height: 100px;
+}
+.hotel-choose-detail h1{
+    font-size: 18px;
+    color:#2e9900;
+    margin-bottom:15px;
+}
+.hotel-choose-detail p{
+    font-size: 13px;
+    line-height: 20px;
+    color: #444;
+}
+.hotel-choose-detail p .icon-location{
+    font-size: 14px;
+    color:#69c1ff;
+    margin-right: 5px;
+}
+.hotel-choose-detail p .map{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.hotel-choose-detail p .map:hover{
+    color:#2e9900;
+}
+/*更多房型*/
+.hotel-more-btn{
+    margin-right: 25px;
+    color:#2e9900;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.hotel-more-btn i{
+    font-size: 14px;
+    display: inline-block;
+}
+.hotel-more-btn:hover{
+    color:#237300;
+}
+/*费用包含*/
+.cost-tab{
+    width: 100%;
+    border:1px solid #ddd;
+    font-size: 14px;
+    text-align: center;
+    margin: 15px auto;
+}
+.cost-tab tr td{
+    padding: 20px 20px;
+    border: 1px solid #ddd;
+}
+.cost-hotel-img{
+    overflow: hidden;
+    margin: 10px auto;
+    height: 85px;
+}
+.cost-hotel-img img{
+    width:100px;
+    height: 75px;
+    margin-right:8px;
+    margin-bottom: 10px;
+}
+.cost-hotel-info{
+    font-size: 12px;
+}
+.cost-hotel-info span{
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    display: inline-block;
+}
+.w14{
+    width: 142px;
+}
+/*预定须知*/
+.xuzhi-list{
+    border-bottom: 1px solid #eee;
+    margin: 6px auto;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.xuzhi-list:last-child{
+    border-bottom: 0;
+}
+.xuzhi-list h1{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.xuzhi-list h2{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.xuzhi-list p{
+    color: #666;
+    line-height: 26px;
+}
+.xuzhi-list p .tt{
+    display: inline-block;
+    width:80px;
+    margin-right:6px;
+}
+/*第三部分 景点介绍 地图交通*/
+.jj-nav-box{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 9;
+}
+/*导航*/
+.jj-nav-box .nav-item{
+    width:116px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    float: left;
+    cursor: pointer;
+}
+.jj-nav-box .nav-item:hover{
+    background:#35a6e0;
+    color: #fff;
+    border: 1px solid #35a6e0 !important;
+}
+.active-nav{
+    background:#35a6e0;
+    color: #fff;
+    border: 1px solid #35a6e0 !important;
+}
+/*内容*/
+.jj-nav-content{
+    position: relative;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-top: -1px;
+    padding: 22px 20px 20px 125px;
+}
+.jj-nav-content .tlt{
+    position: absolute;
+    top:20px;
+    left:0;
+    width: 90px;
+    height: 70px;
+    background:#35a6e0;
+    color: #fff;
+    text-align: center;
+    font-size:18px;
+}
+.jj-nav-content p{
+    line-height: 18px;
+    margin-top: 10px;
+}
+.jj-nav-content .tlt i{
+    font-size:30px;
+}
+/*介绍说明*/
+.jj-nav-content-box h1{
+    font-size: 18px;
+    color: #35a6e0;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+.jj-nav-content-box img{
+    margin-bottom: 20px;
+}
+.jj-nav-content-box .date{
+    margin-bottom: 10px;
+    color: #000;
+    text-indent:0;
+}
+.jj-nav-content-box p{
+    text-indent: 2em;
+    color: #000;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 0;
+}
+.jj-nav-content-box b{
+    display: inline-block;
+    font-size: 14px;
+    margin: 15px 0 10px;
+    color: #000;
+}
+/*地图*/
+.map-box{
+    width:100%;
+    height: 500px;
+}
+.anchorBL{
+    display: none !important;
+}
+.BMapLabel{
+    padding:2px 5px !important;
+    border: 0 !important;
+    box-shadow: 1px 1px 3px 1px #CCC;
+}
+/*起价说明弹出框*/
+.price-pop-box{
+    position: absolute;
+    z-index: 99;
+    padding-top:9px;
+}
+.price-pop{
+    width: 288px;
+    background:#fffce5;
+    border:1px solid #ffdd67;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 8px 6px;
+}
+.price-pop b{
+    color:#ff8800;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.price-pop-content{
+    border-top:1px dotted #ffdd67;
+    padding-top: 5px;
+    margin-top: 5px;
+    line-height: 20px;
+    color: #666;
+}
+.sanjiao{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background:#fffce5;
+    border-top:1px solid #ffdd67;
+    border-right:1px solid #ffdd67;
+    transform:rotate(-45deg);
+    position:absolute;
+    top:4px;
+    left: 50%;
+    margin-left:-5px;
+}
+/*返回顶部*/
+.gotop{
+    position: fixed;
+    bottom:15px;
+    right:30px;
+    color:#35a6e0;
+    cursor: pointer;
+}
+.gotop i{
+    font-size: 40px;
+}
+/*景+酒产品详情页结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
